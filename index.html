@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[1,2]},"content":"Patron de diseño","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Equipo D","children":[{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"Frases","children":[{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"1.","children":[{"type":"heading","depth":4,"payload":{"lines":[6,7]},"content":"La utilización de patrones de diseño es de suma importancia para una buena organización en nuestro diseño de software"}]},{"type":"heading","depth":3,"payload":{"lines":[7,8]},"content":"2.","children":[{"type":"heading","depth":4,"payload":{"lines":[8,9]},"content":"Implementar patrones de diseño de manera óptima garantiza un buen diseño de software."}]},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"3.","children":[{"type":"heading","depth":4,"payload":{"lines":[10,11]},"content":"Ayudan a que las características que queramos implementar tengan una función lógica y un trabajo óptimo"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[14,15]},"content":"Son unas técnicas para resolver problemas comunes en el desarrollo de software.","children":[{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"Tipos de patrones de diseño.","children":[{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"Creacionales","children":[{"type":"heading","depth":4,"payload":{"lines":[19,20]},"content":"Abstraen el proceso de creación de objetos"}]},{"type":"heading","depth":3,"payload":{"lines":[21,22]},"content":"Factory","children":[{"type":"heading","depth":4,"payload":{"lines":[22,23]},"content":"Tiene una interfaz abstracta para crear un objeto"}]},{"type":"heading","depth":3,"payload":{"lines":[24,25]},"content":"Abstract Factory","children":[{"type":"heading","depth":4,"payload":{"lines":[25,26]},"content":"Busca definir una interfaz abstracta para crear una familia de objetos relacionados"}]},{"type":"heading","depth":3,"payload":{"lines":[28,29]},"content":"Builder","children":[{"type":"heading","depth":4,"payload":{"lines":[29,30]},"content":"Este patrón busca encapsular los detalles de la construcción de objetos"}]},{"type":"heading","depth":3,"payload":{"lines":[31,32]},"content":"Prototype","children":[{"type":"heading","depth":4,"payload":{"lines":[32,33]},"content":"Este patrón permite crear otros objetos simplemente haciendo una copia del objeto prototipo y haciéndo las modificaciones respectivas."}]},{"type":"heading","depth":3,"payload":{"lines":[34,35]},"content":"Singleton","children":[{"type":"heading","depth":4,"payload":{"lines":[35,36]},"content":"Es útil cuando se requiere una sola instancia de una clase durante el ciclo de vida de la aplicación."}]},{"type":"heading","depth":3,"payload":{"lines":[37,38]},"content":"Bridge","children":[{"type":"heading","depth":4,"payload":{"lines":[38,39]},"content":"Permite desacoplar la abstracción de una jerarquía de clases de su implementación"}]},{"type":"heading","depth":3,"payload":{"lines":[40,41]},"content":"Virtual Proxy","children":[{"type":"heading","depth":4,"payload":{"lines":[41,42]},"content":"Técnica de ahorro de memoria que propone posponer la creación de un objeto costoso."}]},{"type":"heading","depth":3,"payload":{"lines":[43,44]},"content":"Entre otros"}]}]}]},{})</script>
+</body>
+</html>
